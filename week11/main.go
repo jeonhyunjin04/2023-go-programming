@@ -12,6 +12,7 @@ func main() {
 	test := [5]bool{true, true, true}
 	fmt.Println(test[3])
 	fmt.Println(test)
+	//fmt.Println(test[5]) // 컴파일에러, invalid argument: index 5 out of bounds [0:5]
 
 	fmt.Printf("%#v\n", primes)
 	fmt.Printf("%#v", test)
