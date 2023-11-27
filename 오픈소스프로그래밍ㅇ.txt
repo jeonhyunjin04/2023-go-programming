@@ -1,0 +1,2 @@
+literal 소스로만 전달
+[key] = value
