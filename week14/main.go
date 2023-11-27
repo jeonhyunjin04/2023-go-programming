@@ -3,34 +3,42 @@ package main
 import "fmt"
 
 func main() {
-	// var games map[int]string
-	// games = make(map[int]string)
+	// balls := make(map[string]int) // {}
+	var balls map[string]int // (nil) // err
+	// fmt.Println(balls)
+	fmt.Printf("%#v\n", balls)
+	balls["성기훈"] = 20
+	fmt.Println(balls["성기훈"])
+	fmt.Println(balls["오일남"]) // 0
 
-	// games := make(map[int]string)
+	// // var games map[int]string
+	// // games = make(map[int]string)
 
-	games := map[int]string{
-		456: "성기훈",
-		218: "박해수",
-		067: "강새벽",
-		001: "오일남",
-		199: "알리",
-		101: "아이오아이",
-	}
-	// append
-	// games[456] = "성기훈"
-	// games[218] = "박해수"
-	// games[067] = "강새벽"
-	// games[001] = "오일남"
-	// games[199] = "알리"
-	// games[101] = "아이오아이"
+	// // games := make(map[int]string)
 
-	for _, v := range games {
-		fmt.Println(v)
-	}
-	games[101] = "장덕수" // update
-	delete(games, 199) //delete
+	// games := map[int]string{
+	// 	456: "성기훈",
+	// 	218: "박해수",
+	// 	067: "강새벽",
+	// 	001: "오일남",
+	// 	199: "알리",
+	// 	101: "아이오아이",
+	// }
+	// // append
+	// // games[456] = "성기훈"
+	// // games[218] = "박해수"
+	// // games[067] = "강새벽"
+	// // games[001] = "오일남"
+	// // games[199] = "알리"
+	// // games[101] = "아이오아이"
 
-	for k, v := range games {
-		fmt.Println(k, v)
-	}
+	// for _, v := range games {
+	// 	fmt.Println(v)
+	// }
+	// games[101] = "장덕수" // update
+	// delete(games, 199) //delete
+
+	// for k, v := range games {
+	// 	fmt.Println(k, v)
+	// }
 }
